@@ -1,0 +1,25 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build sfml app",
+            "type": "shell",
+            "command": "C:\\msys64\\mingw64\\bin\\g++",
+            "args": [
+                "-o",
+                "bin/sfml_window",
+                "src/main.cpp",
+                "-I", "C:/SFML/include",
+                "-L", "C:/SFML/lib",
+                "-lsfml-graphics",
+                "-lsfml-window",
+                "-lsfml-system"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"]
+        }
+    ]
+}
